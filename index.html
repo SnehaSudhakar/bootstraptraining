@@ -13,13 +13,49 @@
         crossorigin="anonymous"></script>
     <!-- CSS -->
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         .active {
             background-color: dimgray;
+        }
+
+        .scroll-bg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        #home {
+            background-image: url("img/bg-1.jpg");
+            width: 100%;
+            height: 80vh;
+        }
+
+        #services {
+            background-image: url("img/bg-2.jpg");
+            width: 100%;
+            height: 40vh;
+        }
+
+        #contact {
+            background-image: url("img/bg-3.jpg");
+            width: 100%;
+            height: 85vh;
         }
     </style>
 </head>
 
-<body class="m-0">
+<body>
+
     <header class="fixed-top">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3">
             <div class="container-fluid ">
@@ -27,7 +63,7 @@
                     aria-controls="navbaritems" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                </button>
+
                 <div class="collapse navbar-collapse " id="navbaritems">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -54,27 +90,18 @@
 
     <main>
         <!-- landing page ----------------------------->
-        <section id="home">
-            <div class="card text-white border border-0">
-                <img src="./img/bg-1.jpg" class="card-img img-fluid w-100 rounded-0" alt="landing-bg"
-                    style="width:100%;height:80vh">
-                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center ">
-                    <h1 class="card-title display-1 " style="text-shadow: 3px 1px black;">CONQUER
-                    </h1>
-                    <p class="card-text fs-2" style=" text-shadow: 1px 1px rgb(39, 37, 37);">Simple Bootstrap
-                        Template
-                    </p>
-                </div>
-            </div>
+        <section class="scroll-bg" id="home">
+            <h1 class="card-title display-1" style="text-shadow: 3px 1px black;">CONQUER
+            </h1>
+            <p class="card-text fs-2" style=" text-shadow: 2px 1px rgb(39, 37, 37);">Simple Bootstrap
+                Template
+            </p>
         </section>
-        <!-- End of landing page -->
+        <!-- End of landing page ---------------------->
 
         <!-- About us --------------------------------------->
         <section class="container mt-5 mb-5" id="about">
-
             <!-- First row -->
-            <!-- <div class="row row-cols-sm-1 row-col-md-3 justify-content-center gy-4 gx-4"> -->
-
             <div class="row row-cols-auto g-4 ">
                 <div class="col col-sm-12 col-lg-4 ">
                     <div class="card rounded-0 border-0 h-100">
@@ -172,24 +199,22 @@
         <!-- End of about us ------------------------------------>
 
         <!-- Services ------------------------------------------->
-        <section class="mt-5" id="services">
-            <div class="card text-white border border-0">
-                <img src="./img/bg-2.jpg" class=" img-fluid rounded-0 w-100" alt="services-bg" style="height:50vh">
-                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center ">
-                    <h1 class="card-title " style="text-shadow: 3px 1px rgb(82, 79, 79);">Our Services
-                    </h1>
-                    <p class="card-text fs-4 text-center" style=" text-shadow: 1px 1px rgb(39, 37, 37);">Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit. Esse, quo quas<br> officiis
-                        reprehenderit
-                        ratione sapiente saepe ducimus minus,<br> veritatis quod omnis eaque officia nulla fuga!
-                    </p>
-                </div>
-            </div>
+        <section class="scroll-bg mt-5" id="services">
+            <h1 class="card-title " style="text-shadow: 3px 1px rgb(82, 79, 79);">Our Services
+            </h1>
+            <p class="card-text fs-4 text-center" style=" text-shadow: 1px 1px rgb(39, 37, 37);">Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Esse, quo quas<br> officiis
+                reprehenderit
+                ratione sapiente saepe ducimus minus,<br> veritatis quod omnis eaque officia nulla fuga!
+            </p>
+        </section>
+
+        <section>
             <!-- First row Cards-->
             <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 m-2 g-2">
                 <!-- card 1 -->
-                <div class="col col-sm-12 col-md-6 col-lg-3 ">
-                    <div class="card rounded-0 border-0 ">
+                <div class="col col-sm-12 col-md-6 col-lg-3">
+                    <div class="card rounded-0 border-0 h-100">
                         <img src="./img/4-1.jpg" alt="" class="">
                         <div class="card-body bg-secondary-subtle text-center">
                             <h4 class="card-title text-secondary fw-bold">Column One</h4>
@@ -203,7 +228,7 @@
                 </div>
                 <!-- card 2 -->
                 <div class="col col-sm-12 col-md-6 col-lg-3">
-                    <div class="card rounded-0 border-0 ">
+                    <div class="card rounded-0 border-0 h-100">
                         <img src="./img/4-2.jpg" alt="" class="">
                         <div class="card-body bg-secondary-subtle text-center">
                             <h4 class="card-title text-secondary fw-bold">Column Two</h4>
@@ -216,8 +241,8 @@
                     </div>
                 </div>
                 <!-- card 3 -->
-                <div class="col col-sm-12 col-md-6 col-lg-3">
-                    <div class="card rounded-0 border-0 ">
+                <div class="col col-sm-12 col-md-6 col-lg-3 ">
+                    <div class="card rounded-0 border-0 h-100">
                         <img src="./img/4-3.jpg" alt="" class="">
                         <div class="card-body bg-secondary-subtle text-center">
                             <h4 class="card-title text-secondary fw-bold">Column Three</h4>
@@ -231,7 +256,7 @@
                 </div>
                 <!-- card 4 -->
                 <div class="col col-sm-12 col-md-6 col-lg-3 ">
-                    <div class="card rounded-0 border-0 ">
+                    <div class="card rounded-0 border-0 h-100">
                         <img src="./img/4-4.jpg" alt="" class="">
                         <div class="card-body bg-secondary-subtle  text-center">
                             <h4 class="card-title text-secondary fw-bold">Column Four</h4>
@@ -272,71 +297,62 @@
         <!-- End of services ------------------------------------->
 
         <!-- Contact section ------------------------------------------>
-        <section class="mt-5 mb-0" id="contact">
+        <section class="scroll-bg mt-5 mb-0" id="contact">
+            <h1 class="card-title fw-normal text-white" style="text-shadow: 3px 1px rgb(15, 15, 15);">
+                Contact Form
+            </h1>
+            <p class="card-text bg-light bg-opacity-50 text-dark text-center p-2 mt-2 rounded-2 w-75">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magni, voluptatum molestiae ab,
+                dolore, quasi voluptate necessitatibus nulla possimus temporibus neque officia maiores quo
+                perspiciatis.
+            </p>
 
-            <div class="card border border-0">
-                <img src="./img/bg-3.jpg" class="card-img img-fluid rounded-0 w-100 mb-0" alt="contact-bg"
-                    style="height:85vh;">
-
-                <div class="card-img-overlay d-flex flex-column justify-content-start align-items-center mt-5 ">
-                    <h1 class="card-title fw-normal text-white" style="text-shadow: 3px 1px rgb(15, 15, 15);">
-                        Contact Form
-                    </h1>
-                    <p class="card-text bg-light bg-opacity-50 text-dark text-center p-2 mt-2 rounded-2 w-75">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magni, voluptatum molestiae ab,
-                        dolore, quasi voluptate necessitatibus nulla possimus temporibus neque officia maiores quo
-                        perspiciatis.
-                    </p>
-                    <form class="h-50 w-75 " novalidate>
-                        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
-                            <!-- first column -->
-                            <div class="col col-sm-12 col-md-12">
-                                <!-- row 1 -->
-                                <div class="row row-cols-auto mt-3">
-                                    <div class="col col-sm-12 col-md-6 w-100">
-                                        <input type="text" class="form-control bg-light bg-opacity-50 border-0"
-                                            id="name" placeholder="Name" required>
-                                    </div>
-                                </div>
-                                <!-- row 2 -->
-                                <div class="row row-cols-auto mt-3">
-                                    <div class="col col-sm-12 col-md-6 w-100">
-                                        <input type="email" class="form-control bg-light bg-opacity-50 border-0"
-                                            name="email" id="mail" placeholder="Email" required>
-                                    </div>
-                                </div>
-                                <!-- row 3 -->
-                                <div class="row row-cols-auto mt-3">
-                                    <div class="col col-sm-12 col-md-6 w-100">
-                                        <input type="text" class="form-control bg-light bg-opacity-50 border-0"
-                                            name="subject" id="sub" placeholder="Subject" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End of first column -->
-                            <!-- second column -->
-                            <div class="col col-sm-12 col-md-12">
-                                <!-- row 1 -->
-                                <div class="row row-cols-auto mt-3">
-                                    <div class="col-sm-12 col-md-6 w-100">
-                                        <textarea class="form-control bg-light bg-opacity-50 border-0" name="message"
-                                            id="msg" cols="30" rows="5" placeholder="Your message here..."></textarea>
-                                    </div>
-                                </div>
-                                <!-- row 2 -->
-                                <div class="row row-cols-auto mt-2">
-                                    <div class="col-sm-12 col-md-6 text-start">
-                                        <button type="submit" class="btn btn-outline-light bg-dark px-4">Send</button>
-                                    </div>
-                                </div>
+            <form class="h-50 w-75 " novalidate>
+                <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                    <!-- first column -->
+                    <div class="col col-sm-12 col-md-12">
+                        <!-- row 1 -->
+                        <div class="row mt-3">
+                            <div class="col col-sm-12 col-md-6 w-100">
+                                <input type="text" class="form-control bg-light bg-opacity-50 border-0" id="name"
+                                    placeholder="Name" required>
                             </div>
                         </div>
-
-                    </form>
+                        <!-- row 2 -->
+                        <div class="row mt-3">
+                            <div class="col col-sm-12 col-md-6 w-100">
+                                <input type="email" class="form-control bg-light bg-opacity-50 border-0" name="email"
+                                    id="mail" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <!-- row 3 -->
+                        <div class="row mt-3">
+                            <div class="col col-sm-12 col-md-6 w-100">
+                                <input type="text" class="form-control bg-light bg-opacity-50 border-0" name="subject"
+                                    id="sub" placeholder="Subject" required>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of first column -->
+                    <!-- second column -->
+                    <div class="col col-sm-12 col-md-12">
+                        <!-- row 1 -->
+                        <div class="row mt-3">
+                            <div class="col-sm-12 col-md-6 w-100">
+                                <textarea class="form-control bg-light bg-opacity-50 border-0" name="message" id="msg"
+                                    cols="30" rows="5" placeholder="Your message here..."></textarea>
+                            </div>
+                        </div>
+                        <!-- row 2 -->
+                        <div class="row mt-2">
+                            <div class="col-sm-12 col-md-6 text-start">
+                                <button type="submit"
+                                    class="btn btn-outline-light bg-dark text-light px-4">Send</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-            </div>
-
+            </form>
         </section>
         <!-- End of Contact section ------------------------------------>
 
