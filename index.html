@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conquer</title>
+    <!-- Bootstrap CDN ----------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <style>
+        .active {
+            background-color: dimgray;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3">
+            <div class="container-fluid ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbaritems"
+                    aria-controls="navbaritems" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                </button>
+                <div class="collapse navbar-collapse " id="navbaritems">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link border border-secondary rounded-0 mx-3 active" aria-current="page"
+                                href="#home">Homepage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link border border-secondary  rounded-0 mx-3" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link border border-secondary  rounded-0 mx-3" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link border border-secondary rounded-0 mx-3" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link border border-secondary rounded-0 mx-3">External</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- landing page ----------------------------->
+        <section id="home">
+            <div class="card text-white border border-0">
+                <img src="./img/bg-1.jpg" class="card-img img-fluid w-100 rounded-0" alt="landing-bg"
+                    style="width:100%;height:80vh">
+                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center ">
+                    <h1 class="card-title display-1 " style="text-shadow: 3px 1px black;">CONQUER
+                    </h1>
+                    <p class="card-text fs-2" style=" text-shadow: 1px 1px rgb(39, 37, 37);">Simple Bootstrap
+                        Template
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- End of landing page -->
+
+        <!-- About us --------------------------------------->
+        <section class="container mt-5 mb-5" id="about">
+
+            <!-- First row -->
+            <!-- <div class="row row-cols-sm-1 row-col-md-3 justify-content-center gy-4 gx-4"> -->
+
+            <div class="row row-cols-auto g-4 px-5">
+                <div class="col col-sm-12 col-lg-4 p-4">
+                    <div class="card rounded-0 border-0 h-100">
+                        <img src="./img/1-1.jpg" alt="" class="">
+                        <div class="card-body bg-light">
+                            <h2 class="card-title text-success">Bootstrap v3.3.6</h2>
+                            <p class="card-text"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                                    labore
+                                    doloremque in dolore hic. Similique reiciendis mollitia sed quia voluptatem,
+                                    consequatur
+                                    ullam exercitationem commodi iusto quas veritatis minus amet perspiciatis dolorem
+                                    officia
+                                    facilis perferendis velit.</small>
+                            </p>
+                            <a href="" class="card-link btn btn-success">Button Green</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-lg-4 p-4 ">
+                    <div class="card rounded-0 border-0 h-100">
+                        <img src="./img/1-2.jpg" alt="" class="">
+                        <div class="card-body bg-light">
+                            <h2 class="card-title text-primary">Responsive Design</h2>
+                            <p class="card-text"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                                    labore
+                                    doloremque in dolore hic. Similique reiciendis mollitia sed quia voluptatem,
+                                    consequatur
+                                    ullam exercitationem commodi iusto quas veritatis minus amet perspiciatis dolorem
+                                    officia
+                                    facilis perferendis velit.</small>
+                            </p>
+                            <a href="" class="card-link btn btn-primary">See Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-lg-4 p-4 ">
+                    <div class="card rounded-0 border-0 h-100">
+                        <img src="./img/1-3.jpg" alt="" class="">
+                        <div class="card-body bg-light">
+                            <h2 class="card-title text-danger text-start">Parallax Layout</h2>
+                            <p class="card-text"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                                    labore
+                                    doloremque in dolore hic. Similique reiciendis mollitia sed quia voluptatem,
+                                    consequatur
+                                    ullam exercitationem commodi iusto quas veritatis minus amet perspiciatis dolorem
+                                    officia
+                                    facilis perferendis velit.</small>
+                            </p>
+                            <a href="" class=" card-link btn btn-danger">Button Red</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of first row -->
+
+            <!-- Second row -->
+            <div class="row row-cols-sm-1 row-cols-md-2 px-5 g-4 m-1">
+                <div class="col col-sm-12 col-md-6">
+                    <div class="card border-0 rounded-0">
+                        <img src="./img/2-1.jpg" alt="" class="">
+                        <div class="card-body bg-light">
+                            <h2 class="card-title text-secondary text-center">Two Column Left Side</h2>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                                aliquam, sit aspernatur perspiciatis assumenda architecto at ea explicabo eius nihil
+                                molestias nam numquam quod modi magnam, sed nobis. Voluptates quam ratione at temporibus
+                                iusto. Accusantium.
+                            </p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque quod quibusdam
+                                reprehenderit mollitia commodi explicabo, vitae sint odio sunt voluptatem obcaecati,
+                                iure vero suscipit. Maxime aliquam libero quam accusantium commodi?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-md-6 ">
+                    <div class="card border-0 rounded-0">
+                        <img src="./img/2-2.jpg" alt="" class="">
+                        <div class="card-body bg-light">
+                            <h2 class="card-title text-secondary text-center">Two Column Right Side</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi error,
+                                doloremque hic at possimus alias. Voluptatibus suscipit aperiam reiciendis voluptate
+                                eligendi veniam libero deleniti, quibusdam consequuntur quidem totam nobis aliquam,
+                                atque numquam nemo ullam reprehenderit.
+                            </p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis odit, voluptatum
+                                ducimus aspernatur architecto veniam! Ipsam veritatis quasi ut et dicta.</p>
+                            <a href="" class="card-link btn btn-outline-secondary bg-white text-secondary float-end"
+                                role="button">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of second row -->
+        </section>
+        <!-- End of about us ------------------------------------>
+
+        <!-- Services ------------------------------------------->
+        <section class="mt-5" id="services">
+            <div class="card text-white border border-0">
+                <img src="./img/bg-2.jpg" class=" img-fluid rounded-0 w-100" alt="services-bg" style="height:50vh">
+                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center ">
+                    <h1 class="card-title " style="text-shadow: 3px 1px rgb(82, 79, 79);">Our Services
+                    </h1>
+                    <p class="card-text fs-4 text-center" style=" text-shadow: 1px 1px rgb(39, 37, 37);">Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Esse, quo quas<br> officiis
+                        reprehenderit
+                        ratione sapiente saepe ducimus minus,<br> veritatis quod omnis eaque officia nulla fuga!
+                    </p>
+                </div>
+            </div>
+            <!-- First row Cards-->
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 m-5  g-2">
+                <!-- card 1 -->
+                <div class="col col-sm-12 col-md-6 col-lg-3 ">
+                    <div class="card rounded-0 border-0  h-100">
+                        <img src="./img/4-1.jpg" alt="" class="">
+                        <div class="card-body bg-light text-center">
+                            <h4 class="card-title text-secondary fw-bold">Column One</h4>
+                            <p class="card-text text-start"><small>Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit.
+                                    Aperiam consequuntur laudantium iure quas suscipit expedita vel earum a quia
+                                    iste.</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="col col-sm-12 col-md-6 col-lg-3">
+                    <div class="card rounded-0 border-0  h-100">
+                        <img src="./img/4-2.jpg" alt="" class="">
+                        <div class="card-body bg-light text-center">
+                            <h4 class="card-title text-secondary fw-bold">Column Two</h4>
+                            <p class="card-text text-start"><small>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Sed
+                                    quo quasi rem asperiores, voluptate libero?</small>
+                            </p>
+                            <a href="" class=" card-link btn btn-outline-secondary bg-white text-secondary ">Read It</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="col col-sm-12 col-md-6 col-lg-3">
+                    <div class="card rounded-0 border-0 px-3 h-100">
+                        <img src="./img/4-3.jpg" alt="" class="">
+                        <div class="card-body bg-light text-center">
+                            <h4 class="card-title text-secondary fw-bold">Column Three</h4>
+                            <p class="card-text text-start"><small>Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Sunt
+                                    alias vero soluta minus totam, ducimus nulla. Repellat aliquam voluptatum
+                                    magni?</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="col col-sm-12 col-md-6 col-lg-3 ">
+                    <div class="card rounded-0 border-0 px-3 h-100">
+                        <img src="./img/4-4.jpg" alt="" class="">
+                        <div class="card-body bg-light  text-center">
+                            <h4 class="card-title text-secondary fw-bold">Column Four</h4>
+                            <p class="card-text  text-start"><small>Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quis
+                                    soluta veritatis magni deserunt magnam ipsa?</small>
+                            </p>
+                            <a href="" class=" card-link btn btn-outline-secondary bg-white text-secondary ">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second row cards-->
+            <!-- card 5 -->
+            <div class="row row-cols-1 m-5 g-2 px-5">
+                <div class="col col-sm-12 px-3">
+                    <div class="card rounded-0 border-0 ">
+                        <img src="./img/4-5.jpg" alt="" class="">
+                        <div class="card-body bg-light  text-start">
+                            <h4 class="card-title text-secondary fw-bold">On Big Column</h4>
+                            <p class="card-text"><small>Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Distinctio nemo praesentium vitae deleniti excepturi accusamus quaerat! Ut
+                                    obcaecati, at rerum doloribus accusamus voluptas quos earum aliquid pariatur, cum
+                                    facilis deleniti eveniet placeat optio beatae totam! Animi minima cum illum placeat
+                                    pariatur alias temporibus, qui iste doloremque. Ea maxime corporis dolores?</small>
+                            </p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt facilis ab eaque
+                                veniam et voluptatum hic delectus ratione numquam repellat magni aut, non reiciendis qui
+                                quo a, cum ipsum, pariatur ipsa porro provident quia sunt quod. Voluptatum odit totam ut
+                                quod esse, numquam saepe beatae non voluptate soluta ducimus sunt?</p>
+                            <a href="" class=" card-link btn btn-outline-secondary bg-white text-secondary ">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of service cards -->
+        </section>
+        <!-- End of services ------------------------------------->
+
+        <!-- Contact section ------------------------------------------>
+        <section class="mt-5 mb-0" id="contact">
+
+            <div class="card border border-0">
+                <img src="./img/bg-3.jpg" class="card-img img-fluid rounded-0 w-100" alt="contact-bg"
+                    style="height:70vh;">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-start align-items-center mt-5 ">
+                    <h1 class="card-title fw-normal text-white" style="text-shadow: 3px 1px rgb(15, 15, 15);">
+                        Contact Form
+                    </h1>
+                    <p class="card-text bg-light bg-opacity-50 text-dark text-center p-4 mt-2 mb-3 rounded-2 w-50">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magni, voluptatum molestiae ab,
+                        dolore, quasi voluptate necessitatibus nulla possimus temporibus neque officia maiores quo
+                        perspiciatis.
+                    </p>
+                    <form class="h-50 w-50" novalidate>
+                        <div class="row row-cols-sm-1 row-cols-md-2">
+                            <!-- first column -->
+                            <div class="col col-sm-12 col-md-6">
+                                <!-- row 1 -->
+                                <div class="row row-cols-auto mt-3">
+                                    <div class="col col-sm-12 col-md-6 w-100">
+                                        <input type="text" class="form-control bg-light bg-opacity-50 border-0"
+                                            id="name" placeholder="Name" required>
+                                    </div>
+                                </div>
+                                <!-- row 2 -->
+                                <div class="row row-cols-auto mt-3">
+                                    <div class="col col-sm-12 col-md-6 w-100">
+                                        <input type="email" class="form-control bg-light bg-opacity-50 border-0"
+                                            name="email" id="mail" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <!-- row 3 -->
+                                <div class="row row-cols-auto mt-3">
+                                    <div class="col col-sm-12 col-md-6 w-100">
+                                        <input type="text" class="form-control bg-light bg-opacity-50 border-0"
+                                            name="subject" id="sub" placeholder="Subject" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of first column -->
+                            <!-- second column -->
+                            <div class="col col-sm-12 col-md-6">
+                                <!-- row 1 -->
+                                <div class="row row-cols-auto mt-3">
+                                    <div class="col-sm-12 col-md-6 w-100">
+                                        <textarea class="form-control bg-light bg-opacity-50 border-0" name="message"
+                                            id="msg" cols="30" rows="5" placeholder="Your message here..."></textarea>
+                                    </div>
+                                </div>
+                                <!-- row 2 -->
+                                <div class="row row-cols-auto mt-2">
+                                    <div class="col-sm-12 col-md-6 text-start">
+                                        <button type="submit" class="btn btn-outline-light bg-dark px-4">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- End of Contact section ------------------------------------>
+
+
+    </main>
+</body>
+
+</html>
